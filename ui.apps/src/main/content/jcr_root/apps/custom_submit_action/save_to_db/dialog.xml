@@ -1,0 +1,5 @@
+<cq:dialog
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="nt:unstructured"
+    title="Save Form Data">
+</cq:dialog>

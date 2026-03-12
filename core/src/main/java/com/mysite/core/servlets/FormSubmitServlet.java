@@ -20,9 +20,17 @@ public class FormSubmitServlet extends SlingAllMethodsServlet {
 	protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response)
 			throws ServletException, IOException {
 
+		// this is for js based submit using clientlib
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
 		String message = request.getParameter("message");
+
+		// this is for custom submit action
+		if (name == null) {
+			name = (String) request.getAttribute("name");
+			email = (String) request.getAttribute("email");
+			message = (String) request.getAttribute("message");
+		}
 
 		try {
 
@@ -31,7 +39,8 @@ public class FormSubmitServlet extends SlingAllMethodsServlet {
 			Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres",
 					"admin");
 
-			PreparedStatement ps = conn.prepareStatement("INSERT INTO customer_form_data(name,email,message) VALUES (?,?,?)");
+			PreparedStatement ps = conn
+					.prepareStatement("INSERT INTO customer_form_data(name,email,message) VALUES (?,?,?)");
 
 			ps.setString(1, name);
 			ps.setString(2, email);
