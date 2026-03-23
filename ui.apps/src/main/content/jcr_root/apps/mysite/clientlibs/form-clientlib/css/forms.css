@@ -1,0 +1,99 @@
+/* Form Container */
+.fd-row.guideGridFluidLayout2Container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Labels */
+.guideFieldLabel label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Input Fields */
+.guideFieldWidget input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus */
+.guideFieldWidget input:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,112,243,0.15);
+}
+
+/* Field Spacing */
+.guidefield {
+    margin-bottom: 18px;
+}
+
+/* Button Base */
+.button-default,
+.submit {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Get Details Button */
+.getDetails .button-default {
+    background: #f5f7fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.getDetails .button-default:hover {
+    background: #e9eef5;
+}
+
+/* Submit Button */
+.submit {
+    background: #0070f3;
+    color: #fff;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background: #005bb5;
+}
+
+/* Error Message */
+.guideFieldError {
+    color: #d93025;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Two Column Layout Fix (ID + Button) */
+.fd-col-lg-6, .fd-col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fd-col-lg-2 .guideFieldWidget {
+    margin-top: 22px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fd-row.guideGridFluidLayout2Container {
+        padding: 20px;
+    }
+}
