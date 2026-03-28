@@ -16,7 +16,8 @@
     "sync": "aemsync -d -p ../ui.apps/src/main/content",
     "chokidar": "chokidar -c \"clientlib\" ./dist",
     "aemsyncro": "aemsync -w ../ui.apps/src/main/content",
-    "watch": "npm-run-all --parallel start chokidar aemsyncro"
+    "watch": "npm-run-all --parallel start chokidar aemsyncro",
+    "storybook": "storybook dev -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -32,7 +33,7 @@
     "chokidar-cli": "^3.0.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^10.1.0",
-    "css-loader": "^6.5.1",
+    "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^3.2.0",
     "cssnano": "^5.0.12",
     "eslint": "^8.4.1",
@@ -42,10 +43,11 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.2.15",
     "postcss-loader": "^3.0.0",
-    "sass": "^1.45.0",
-    "sass-loader": "^12.4.0",
+    "sass": "^1.97.3",
+    "sass-loader": "^16.0.6",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^0.14.1",
+    "storybook": "^8.6.15",
+    "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.2.5",
     "ts-loader": "^9.2.6",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
@@ -53,7 +55,13 @@
     "webpack": "^5.76.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/html-webpack5": "^8.6.14",
+    "@storybook/manager-api": "^8.6.14",
+    "@storybook/preview-api": "^8.6.14",
+    "handlebars": "^4.7.8",
+    "handlebars-loader": "^1.7.3"
   },
   "dependencies": {},
   "browserslist": [
