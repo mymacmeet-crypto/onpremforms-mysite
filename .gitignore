@@ -98,6 +98,11 @@ actions/common/
 # Frontend Maven Plugin
 node/
 
+._*
+/_*
+**/._*
+
+
 # Tests
 coverage/
 reports/

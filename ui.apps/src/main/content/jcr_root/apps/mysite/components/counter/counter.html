@@ -1,0 +1,15 @@
+<sly data-sly-use.model="com.mysite.core.models.CounterModel" />
+
+<div class="counter">
+    Current Count: ${model.count}
+</div>
+
+<style>
+.counter {
+  font-size: 80px;
+  font-weight: bold; /* Makes the number stand out */
+  color: red; /* Optional: sets a color */
+  text-align: center; /* Optional: centers the text */
+}
+
+</style>
