@@ -10,7 +10,7 @@ export const CustomForm = (args) => {
 (function initCustomForm() {
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".custom-form");
-    if (!form) return;
+    if (!form) { return; }
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();

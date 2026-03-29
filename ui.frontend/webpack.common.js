@@ -30,6 +30,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader'
+            },
+            {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: [
