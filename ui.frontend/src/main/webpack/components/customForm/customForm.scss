@@ -1,0 +1,129 @@
+// ─── Custom Form styles ───────────────────────────────────
+
+.custom-form-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.custom-form__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #18181b;
+  margin: 0 0 24px;
+}
+
+// ─── Fields ───────────────────────────────────────────────
+
+.custom-form__field {
+  margin-bottom: 18px;
+}
+
+.custom-form__label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.custom-form__input,
+.custom-form__textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #a1a1aa;
+  }
+
+  &:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.15);
+  }
+}
+
+.custom-form__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+// ─── Submit button ────────────────────────────────────────
+
+.custom-form__actions {
+  margin-top: 24px;
+}
+
+.custom-form__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0070f3;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background: #005bb5;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #a1a1aa;
+    outline-offset: 2px;
+  }
+}
+
+// ─── Theme: dark ──────────────────────────────────────────
+
+.custom-form-wrapper--dark {
+  background: #18181b;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  .custom-form__title {
+    color: #fafafa;
+  }
+
+  .custom-form__label {
+    color: #d4d4d8;
+  }
+
+  .custom-form__input,
+  .custom-form__textarea {
+    background: #27272a;
+    border-color: #3f3f46;
+    color: #fafafa;
+
+    &::placeholder {
+      color: #71717a;
+    }
+
+    &:focus {
+      border-color: #0070f3;
+      box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.25);
+    }
+  }
+}
+
+// ─── Responsive ───────────────────────────────────────────
+
+@media (max-width: 768px) {
+  .custom-form-wrapper {
+    padding: 20px;
+    margin: 20px auto;
+  }
+}

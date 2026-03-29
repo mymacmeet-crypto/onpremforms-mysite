@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /d/AEM/onpremforms-mysite/ui.frontend/src -type f \\\\\\(-name *.js -o -name *.scss -o -name *.html \\\\\\))"
+    ]
+  }
+}

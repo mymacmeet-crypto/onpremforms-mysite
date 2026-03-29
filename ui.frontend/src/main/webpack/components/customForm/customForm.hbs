@@ -1,0 +1,44 @@
+<div class="custom-form-wrapper custom-form-wrapper--{{theme}}">
+  <form class="custom-form" novalidate>
+    {{#if title}}
+      <h2 class="custom-form__title">{{title}}</h2>
+    {{/if}}
+
+    <div class="custom-form__field">
+      <label class="custom-form__label" for="cf-name">Name</label>
+      <input
+        class="custom-form__input"
+        type="text"
+        id="cf-name"
+        name="name"
+        placeholder="{{namePlaceholder}}"
+        {{#if required}}required{{/if}} />
+    </div>
+
+    <div class="custom-form__field">
+      <label class="custom-form__label" for="cf-email">Email</label>
+      <input
+        class="custom-form__input"
+        type="email"
+        id="cf-email"
+        name="email"
+        placeholder="{{emailPlaceholder}}"
+        {{#if required}}required{{/if}} />
+    </div>
+
+    <div class="custom-form__field">
+      <label class="custom-form__label" for="cf-message">Message</label>
+      <textarea
+        class="custom-form__textarea"
+        id="cf-message"
+        name="message"
+        rows="4"
+        placeholder="{{messagePlaceholder}}"
+        {{#if required}}required{{/if}}></textarea>
+    </div>
+
+    <div class="custom-form__actions">
+      <button class="custom-form__submit" type="submit">{{submitLabel}}</button>
+    </div>
+  </form>
+</div>
