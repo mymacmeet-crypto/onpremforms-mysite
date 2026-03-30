@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find /d/AEM/onpremforms-mysite/ui.frontend/src -type f \\\\\\(-name *.js -o -name *.scss -o -name *.html \\\\\\))"
+      "Bash(find /d/AEM/onpremforms-mysite/ui.frontend/src -type f \\\\\\(-name *.js -o -name *.scss -o -name *.html \\\\\\))",
+      "Bash(find /Volumes/Crucial X9/AEM/Code/aempoc/onprem-project/mysite -name *FormSubmit* -o -name *form*submit* -type f)",
+      "Bash(find /Volumes/Crucial X9/AEM/Code/aempoc/onprem-project/mysite -path */config* -name *.xml -o -name *.cfg -o -name *.properties)"
     ]
   }
 }

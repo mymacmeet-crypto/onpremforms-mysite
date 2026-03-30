@@ -12,7 +12,7 @@
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/apps/mysite/components/form/button,/apps/mysite/components/form/hidden,/apps/mysite/components/form/options,/apps/mysite/components/form/text]">
+                        components="[/apps/mysite/components/form/button,/apps/mysite/components/form/customForm,/apps/mysite/components/form/hidden,/apps/mysite/components/form/options,/apps/mysite/components/form/text]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
