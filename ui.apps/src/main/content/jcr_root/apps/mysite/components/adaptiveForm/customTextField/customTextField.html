@@ -1,0 +1,16 @@
+<div class="custom-text-field">
+    <label for="${properties.name @ context='attribute'}">${properties.jcr:title}</label>
+    <div class="custom-text-field__input-wrapper">
+        <input
+            class="custom-text-field__input"
+            type="text"
+            id="${properties.name @ context='attribute'}"
+            name="${properties.name @ context='attribute'}"
+            placeholder="${properties.placeHolderText @ context='attribute'}"
+            maxlength="${properties.maxChars @ context='attribute'}"
+            data-sly-test="${!properties.readOnly}"
+        />
+        <span class="custom-text-field__char-count" data-sly-test="${properties.maxChars}"></span>
+    </div>
+    <div class="custom-text-field__error" aria-live="polite"></div>
+</div>

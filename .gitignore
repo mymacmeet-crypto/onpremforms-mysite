@@ -104,3 +104,7 @@ reports/
 
 # Others
 dispatcher/src/conf.d/variables/default.vars
+
+# macOS metadata files
+._*
+.DS_Store
